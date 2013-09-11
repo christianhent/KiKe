@@ -1,0 +1,6 @@
+{	
+	"scale_method": "crop",
+	"cache_hours": 12,
+	"max_width": 960,
+	"max_height": 960
+}
