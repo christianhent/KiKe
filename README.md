@@ -1,4 +1,4 @@
-# KiKe App - Joomla! Framework Sample Application #
+# KiKe App - Joomla! Framework App #
 
 [Image placeholder service](http://kike.zenjiapps.com/docs/index.html) based on Joomla Framework.
 
