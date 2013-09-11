@@ -93,8 +93,8 @@ class KiKeApp extends WebApp {
 
 	protected function doExecute()
     {
-		// Check if image folder exists and is writeable
-		if(!Folder::exists($this->imageFolder) || !is_writable($this->imageFolder)) {
+		// Check if image folder exists
+		if(!Folder::exists($this->imageFolder)) {
 
 			Joomla\Log\Log::add('Cannot find or write to the images folder', Joomla\Log\Log::ERROR, 'Kike');
 
