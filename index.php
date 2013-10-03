@@ -60,7 +60,9 @@ class KiKeApp extends WebApp {
 		'cordovan',
 		'coffee',
 		'mahagony',
-		'sinopia'
+		'sinopia',
+		'yale',
+		'olive'
 	);
 
 	public function __construct()
@@ -367,17 +369,25 @@ class KiKeApp extends WebApp {
 				case 'sinopia':
 					$this->imagePlaceholder->filter('COLORIZE', array(IMG_FILTER_COLORIZE => 'sinopia'));
 					break;
-						
+					
+				case 'yale':
+					$this->imagePlaceholder->filter('COLORIZE', array(IMG_FILTER_COLORIZE => 'yale'));
+					break;
+
+				case 'olive':
+					$this->imagePlaceholder->filter('COLORIZE', array(IMG_FILTER_COLORIZE => 'olive'));
+					break;
+										
 				case 'emboss':
 					$this->imagePlaceholder->filter('EMBOSS');
 					break;
 						
 				case 'smooth':
-					$this->imagePlaceholder->filter('SMOOTH', array(IMG_FILTER_SMOOTH => -1));
+					$this->imagePlaceholder->filter('SMOOTH', array(IMG_FILTER_SMOOTH => 5));
 					break;
 					
 				case 'brightness':
-					$this->imagePlaceholder->filter('BRIGHTNESS', array(IMG_FILTER_BRIGHTNESS => -25));
+					$this->imagePlaceholder->filter('BRIGHTNESS', array(IMG_FILTER_BRIGHTNESS => 50));
 					break;
 
 				case 'sketchy':
@@ -389,7 +399,7 @@ class KiKeApp extends WebApp {
 					break;
 					
 				case 'contrast':
-					$this->imagePlaceholder->filter('CONTRAST', array(IMG_FILTER_CONTRAST => 25));
+					$this->imagePlaceholder->filter('CONTRAST', array(IMG_FILTER_CONTRAST => -40));
 					break;
 						
 				case 'pixelate':
