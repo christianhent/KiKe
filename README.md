@@ -8,4 +8,4 @@
     
 2.  Run composer install
 
-3.	Optional, fork the Colorize and Pixelate filters from [here](https://github.com/christianhent/joomla-framework-image/tree/patch-1/Filter)
+3.	Optional, fork the Colorize, Pixelate or Blur filters from [here](https://github.com/christianhent/joomla-framework-image/tree/patch-1/Filter)
