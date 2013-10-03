@@ -62,7 +62,9 @@ class KiKeApp extends WebApp {
 		'mahagony',
 		'sinopia',
 		'yale',
-		'olive'
+		'olive',
+		'gaussian',
+		'selective'
 	);
 
 	public function __construct()
@@ -408,6 +410,14 @@ class KiKeApp extends WebApp {
 						
 				case 'edgedetect':
 					$this->imagePlaceholder->filter('EDGEDETECT');
+					break;
+				
+				case 'gaussian':
+					$this->imagePlaceholder->filter('GAUSSIAN');
+					break;
+				
+				case 'selective':
+					$this->imagePlaceholder->filter('SELECTIVE');
 					break;
 					
 				default:	
